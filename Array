@@ -1,0 +1,61 @@
+    <?php>
+    /*$nama1 = array ("Gilang", "Nadia", "Kamelia", "Aina", "Rifanny"); // versi lama/ prosedur
+    $nama2 = ["Gilang", "Nadia", "Kamelia", "Aina", "Rifanny"]; // versi terbaru/ objeck
+
+    print_r ($nama1); // menampilkan seluruh string dalam array
+    echo "<br />";
+    print_r($nama2); 
+    echo "<br />";
+    echo "Nama saya : " . $nama1 [1];*/
+
+    /*$siswa = [
+        "name" => "Rifanny",
+        "gender" => "Cewe",
+        "class" => "XI RPL 1"
+    ];
+
+    echo "Name : " . $siswa["name"];
+    echo "<br>";
+    echo "Gender : " . $siswa["gender"];
+    echo "<br>";
+    echo "Class : " . $siswa["class"];
+    echo "<br>";*/
+
+    $siswa = array(
+        array(
+            "nama" => "Rais",
+            "gender" => "cowo",
+            "class" => "XI TKJ "
+        ),
+        array(
+            "nama" => "Wandi",
+            "gender" => "cowo",
+            "class" => "XI RPL 2"
+        ),
+        array(
+            "nama" => "Rifanny",
+            "gender" => "cewe",
+            "class" => "XI RPL 1"
+        ),
+        array(
+            "nama" => "Citra",
+            "gender" => "cowo",
+            "class" => "XI RPL 2"
+        ),
+        array(
+            "nama" => "Rifki",
+            "gender" => "cowo",
+            "class" => "XI RPL 2"
+        )
+    );
+    /*echo $siswa[1] ["nama"];
+    echo "<br>";
+    echo $siswa[2] ["nama"];*/
+
+    foreach ($siswa as $row) {
+        echo "Nama : " . $row["nama"] . "<br>";
+        echo "Gender : " . $row["gender"] . "<br>";
+        echo "Clsas : " . $row["class"] . "<br>";
+        echo "<br>";
+    }
+?>
